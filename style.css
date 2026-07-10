@@ -1,0 +1,29 @@
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.add-animation {
+  animation: slideInLeft 0.5s ease-out forwards;
+}
+
+.delete-animation {
+  animation: slideOutLeft 0.5s ease-in forwards;
+}
